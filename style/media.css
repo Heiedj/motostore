@@ -1,0 +1,289 @@
+/* @media (max-width:1179px) {
+    .login input, .password input{
+        width: 400px;
+    }
+} */
+/* махинации с картой */
+@media (max-width:1123px){
+    .map iframe{
+        width: 400px !important;
+        height: 450px !important;
+    }
+    .info{
+        width: 400px;
+    }
+}
+/* тут уже и с footer */
+@media (max-width:1034px){
+    .top, .bottom{
+        width: 100%;
+    }
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .top_footer{
+        width: 100%;
+    }
+    .moto, .spare{
+        height: 30%;
+    }
+    footer ul{
+        height: 300px;
+        margin: 5% 0 0 0 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top_info{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .map iframe{
+        width: 900px !important;
+        height: 500px !important;
+    }
+}
+/* карта и каталог */
+@media (max-width:904px){
+    .catalog div div{
+        width: 330px;
+        height: 413px;
+    }
+    .map iframe{
+        width: 700px !important;
+        height: 300px !important;
+    }
+}
+/* планшет */
+@media (max-width:786px){
+    .menu{
+        display: none;
+    }
+    .menu_button span{
+        display: flex;
+    }
+    .technics ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom{
+        margin: 40px 0 0 0;
+    }
+    #raider1, #raider3{
+        display: none;
+    }
+    .raider{
+        width: 30%;
+    }
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .top_footer{
+        width: 100%;
+    }
+    .moto, .spare{
+        height: 30%;
+    }
+    footer ul{
+        height: 300px;
+        margin: 5% 0 0 0 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top_info{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .map iframe{
+        width: 700px !important;
+        height: 400px !important;
+    }
+} 
+@media (max-width:701px) {
+    .technics a{
+        font-size: 25px;
+    }
+    .moto p, .spare p{
+        display: flex;
+        justify-content: center;
+    }
+    footer li{
+        display: flex;
+        justify-content: center;
+    }
+    .top_info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .map iframe{
+        width: 500px !important;
+        height: 400px !important;
+    }
+} 
+@media (max-width:690px){
+    
+    .catalog div div{
+        width: 280px;
+        height: 400px;
+    }
+}
+@media (max-width:590px){
+    
+    .catalog div div{
+        width: 200px;
+        height: 400px;
+    }
+} 
+@media (max-width:510px) {
+    .top ul, .center ul, .bottom ul, .center img{
+        display: none;
+    }
+    #min{
+        display: flex;
+        flex-direction: column;
+    }
+    #min ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #min li{
+        width: 100%;
+    }
+    #min li:before {
+        display: flex;
+        align-content: center;
+        content: "\2022";
+        margin: 0 0 0 10px;
+        display: inline-block;
+        width: 20px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 30px;
+    }
+    #min .img_technics{
+        width: 100%;
+    }
+    .raider_min{
+        display: flex;
+        height: 70%;
+    }
+    .raider_min li:before {
+        display: flex;
+        align-content: center;
+        content: "\2022";
+        margin: 0 0 0 10px;
+        display: inline-block;
+        width: 20px;
+        color: rgb(14, 14, 14);
+        font-size: 30px;
+    }
+    .equipment{
+        flex-direction: row-reverse;
+    }
+    .raider{
+        width: 40%;
+    }
+    #r1, #r2{
+        display: none;
+    }
+    .company img{
+        width: 40%;
+    }
+    footer{
+        height: 100%;
+    }
+    .top_footer{
+        flex-direction: column;
+        margin: 10px 0 20px 0;
+        height: 400px;
+    }
+    .spare{
+        margin: 30px 0 0 0;
+    }
+    .info{
+        margin: 0 0 20% 0;
+    }
+    .map iframe{
+        width: 350px !important;
+        height: 350px !important;
+    }
+    p, h4, a, h3{
+        font-size: 20px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .company p{
+        font-size: 14px;
+    }
+    footer li a{
+        font-size: 14px;
+    }
+    .catalog div div{
+        width: 200px;
+        height: 400px;
+    }
+    footer a, footer p{
+        font-size: 24px;
+    }
+} 
+@media (max-width:416px){
+    .catalog div div{
+        width: 180px;
+        height: 450px;
+    }
+    .catalog p{
+        font-size: 22px;
+    }
+}
+@media (max-width:380px){
+    .catalog div div{
+        width: 160px;
+        height: 450px;
+    }
+    footer, header{
+        height: 844px;
+    }
+    main>div{
+        height: 844px;
+    }
+    /* .map iframe{
+
+    } */
+}
+@media (max-width:356px){
+    .map iframe{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .catalog div div{
+        width: 140px;
+        height: 450px;
+    }
+    .catalog p{
+        font-size: 20px;
+    }
+} 
+
+

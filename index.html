@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мотосалон</title>
+  <!--шрифты-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alef&family=Oswald:wght@500&display=swap" rel="stylesheet">  
+  <!-- иконочный -->
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--мои стили-->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="/style/media.css">
+
+  </head>
+<body>
+    <div id="modal" class="popup">
+        <div class="modal-body">
+          <div class="modal-content">
+            <div class = "modal-head">
+            <h4>Личный кабинет</h4>
+            <a href="#" class="close1">
+              <span class="material-symbols-outlined">close</span>
+            </a>
+            </div>
+            <div class = "field_form">
+                    <form>
+                      <div class="form_body">
+                        <div class = "login">
+                            <p>Логин <span>*</span></p>
+                            <input name="username" type="text"/>
+                        </div>
+                        <div class = "password">
+                            <p>Пароль <span>*</span></p>
+                            <input name="userpass" type="password"/>
+                        </div>
+                        <div class="bottom_modal">
+                          <div class = "form_person">
+                              <div class="check">
+                                <input type="checkbox" name="me" value="yes" /> 
+                                <span>Запомнить меня</span>
+                              </div>
+                            <a class = "new_password">Забыли пароль?</a>
+                          </div>
+                          <button class = "come">Войти</button>
+                        </div>
+                      </div>
+                    </form>
+                    <div class = "new_field">
+                    <h3>Еще нет аккаунта?</h3>
+                    <p>Зарегистрируйтесь. Это займет пару минут.</p>
+                    <button class = "create">Регистрация</button>
+                    </div>
+                </div>
+          </div>
+          </div>
+        </div>
+        <div id="basket" class="popup">
+            <div class="modal-body">
+              <div class="modal-content">
+                <div class = "modal-head">
+                <h4>Корзина</h4>
+                <a href="#" class="close2">
+                  <span class="material-symbols-outlined">close</span>
+                </a>
+                </div>
+                <div class = "field_basket">
+                  <table>
+                    <tr>
+                      <td><img src="/img/Rectangle 23.png" alt=""></td>
+                      <td id="name">Название товара</td>
+                      <td>210 000 ₽</td>
+                      <td>1</td>
+                      <td>210 000 ₽ </td>
+                    </tr>
+                  </table>
+                  <div class="bottom_basket">
+                    <form action="#">
+                      <input type="text" value="Промокод" name="promo">
+                      <button id="button_basket_form">Применить</button>
+                    </form>
+                    <div class="total">
+                      <h4>Итого:</h4>
+                      <p>210 000 ₽</p>
+                      <button id="button_basket_total">Оформить</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              </div>
+            </div>    
+    <header>
+        <video autoplay muted loop preload="auto">
+            <source src="/video/moto.mp4">
+            <source src="/video/moto.webm">
+        </video>
+        <div class="content_menu">
+          <div id="menu_min" class="popup">
+            <div class="block_min">
+                    <a href="/pages/technics.html"> Техника</a>
+                    <a href="#"> Экипировка</a>
+                    <a href="#"> Масло</a>
+                    <a href="#"> Запчасти</a>
+                    <a href="#"> Доставка</a>
+                    <a href="#company"> О нас</a>
+                    <a href="#modal" class="person"><span class="material-symbols-outlined">account_circle</span>Аккаунт</a>
+                    <a href="#basket" class="cart"><span class="material-symbols-outlined">shopping_basket</span>Корзина</a>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="/index.html"><img src="/img/logo.png"></a>
+        </div>
+        <div class="menu">
+          <div class="block">
+              <div class="block_one">
+                  <a href="/pages/technics.html"> Техника</a>
+                  <a href="#"> Экипировка</a>
+                  <a href="#"> Масло</a>
+                  <a href="#"> Запчасти</a>
+                  <a href="#"> Доставка</a>
+              </div>
+              <div class="block_two">
+                  <a href="#company"> О нас</a>
+                  <a href="#modal" class="person"><span class="material-symbols-outlined">account_circle</span></a>
+                  <a href="#basket" class="cart"><span class="material-symbols-outlined">shopping_basket</span></a>
+              </div>
+          </div>
+      </div>
+      <p class="menu_button">
+        <span class="material-symbols-outlined">menu</span>
+      </p>
+        </div>
+            <div class="content">
+                <p>Тут должна быть какая-то мотивационная фраза, но автор слишком ленив &#9785;</p>
+            </div>
+        </header>
+  <main>
+
+    <div class="technics">
+      <div id="min">
+        <div class="img_technics">
+          <img src="img/Rectangle 4.png" alt="">
+        </div>
+        <ul>
+          <li><a href="#">Сидения</a></li>
+          <li><a href="#">Пластик и наклейки</a></li>
+          <li><a href="#">Ручки, лапки, тросы</a></li>
+          <li><a href="#">Топливная система</a></li>
+          <li><a href="#">Цепи, звезды</a></li>
+          <li><a href="#">Покрышки</a></li>
+          <li><a href="#">Охлаждение</a></li>
+          <li><a href="#">Подвеска, рама, маятник</a></li>
+          <li><a href="#">Двигатели</a></li>
+          <li><a href="#">Фильтры</a></li>
+        </ul>
+      </div>
+        <div class="top">
+          <ul>
+            <li><a href="#">Сидения</a></li>
+            <li><a href="#">Пластик и наклейки</a></li>
+            <li><a href="#">Ручки, лапки, тросы</a></li>
+          </ul>
+        </div>
+        <div class="center">
+          <div class="left">
+            <ul>
+              <li><a href="#">Электрика</a></li>
+              <li><a href="#">Выхлопная система</a></li>
+              <li><a href="#">Тормозная система</a></li>
+            </ul>
+          </div>
+          <div class="img_technics">
+            <img src="img/Rectangle 4.png" alt="">
+          </div>
+          <div class="right">
+            <ul>
+              <li><a href="#">Топливная система</a></li>
+              <li><a href="#">Цепи, звезды</a></li>
+              <li><a href="#">Покрышки</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li><a href="#">Охлаждение</a></li>
+            <li><a href="#">Подвеска, рама, маятник</a></li>
+            <li><a href="#">Двигатели</a></li>
+            <li><a href="#">Фильтры</a></li>
+          </ul>
+        </div>
+      </div>
+    
+    <div class="equipment">
+      <div class="raider" id="raider1">
+          <img src="img/raider1.png" alt="">
+        </div>
+        <div class="raider_min">
+          <ul>
+            <li><a href="#">Шлем</a></li>
+            <li><a href="#">Очки</a></li>
+            <li><a href="#">Черепаха</a></li>
+            <li><a href="#">Перчатки</a></li>
+            <li><a href="#">Наколенники</a></li>
+            <li><a href="#">Защита шеи</a></li>
+            <li><a href="#">Джерси</a></li>
+            <li><a href="#">Налокотники</a></li>
+            <li><a href="#">Штаны</a></li>
+            <li><a href="#">Мотоботы</a></li>
+          </ul>
+        </div>
+        <div id="r1" class="raider">
+          <ul>
+            <li><a href="#">Шлем</a></li>
+            <li><a href="#">Очки</a></li>
+            <li><a href="#">Черепаха</a></li>
+            <li><a href="#">Перчатки</a></li>
+            <li><a href="#">Наколенники</a></li>
+          </ul>
+        </div>
+        <div class="raider">
+          <img src="img/raider2.png" alt="">
+        </div>
+        <div id="r2" class="raider">
+          <ul>
+            <li><a href="#">Защита шеи</a></li>
+            <li><a href="#">Джерси</a></li>
+            <li><a href="#">Налокотники</a></li>
+            <li><a href="#">Штаны</a></li>
+            <li><a href="#">Мотоботы</a></li>
+          </ul>
+        </div>
+        <div class="raider" id="raider3">
+          <img src="img/raider3.png" alt="">
+        </div>
+    </div>
+    <div class="company" id="company">
+      <div class="text">
+        <span>О нас</span>
+        <p>
+          <img src="img/Rectangle 10.png" alt="">
+          И опять, в этом блоке надо бы рассказать о нашей компании, насколько мы круты. Но, думаю, это будет лишним. Для наглядности дальше будет рыба.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odio nostrum cupiditate ipsa mollitia enim officiis natus illum, minus iste repellendus quisquam. Blanditiis veritatis sit quibusdam labore. Ipsum, maxime repellat.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda numquam minus officia iste hic ea est libero corrupti quis laboriosam laborum, aut nemo dolor? Aliquam quo dolorem repellat nemo!
+          </p>
+
+        </div>
+    </div>
+  </main>
+  <footer>
+    <div class="top_footer">
+      <div class="moto">
+        <p><a href="#">Техника</a></p>
+        <ul>
+          <li><a href="#"> Эндуро</a></li>
+          <li><a href="#"> Дорожные</a></li>
+          <li><a href="#"> Питбайки</a></li>
+          <li><a href="#"> Квадроциклы</a></li>
+        </ul>
+      </div>
+      <div class="spare">
+        <p><a href="#">Запчасти</a></p>
+        <ul>
+          <li><a href="#">Для питбайков</a></li>
+          <li><a href="#">Для квадроциклов</a></li>
+          <li><a href="#">Для эндуро</a></li>
+          <li><a href="#">Для дорожных</a></li>
+        </ul>
+      </div>
+  </div>
+      <div class="info">
+        <div class="top_info">
+          <p class="phone"><a href="tel:+7(987)65-43">+7(987)065-43 -45</a></p>
+          <p><a href="#"> г.Москва Староватутинский проезд, 6</a></p>
+        </div>
+        <div class="map" style="position:relative;overflow:hidden;"> 
+          <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+          <a href="https://yandex.ru/maps/213/moscow/?ll=37.672902%2C55.872577&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.672856%2C55.874343&whatshere%5Bzoom%5D=16.2&z=16.2" style="color:#eee;font-size:12px;position:absolute;top:14px;">Староватутинский проезд, 6 — Яндекс Карты</a>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUFmXQKxA" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div> 
+    </div>
+  </footer> 
+  <script src="js/practic.js"></script>
+</body>
+</html> 

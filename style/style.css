@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* прижатие футера к полу */
+html, body{
+    max-height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+} 
+/* точки у списков */
+li{
+    list-style: none;
+}
+/* линии у ссылок */
+a{
+    text-decoration: none;
+}
+/* шрифт основной */
+p, h4, a, h3{
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 47px;
+    color:rgba(14, 14, 14, 1);
+}
+a:hover{
+    color: rgba(255, 79, 0, 1);
+}
+p>a:hover{
+    color: rgba(255, 79, 0, 1);
+}
+a>span:hover{
+    color:rgba(255, 79, 0, 1);
+}
+
+
+/* --------- */
+
+
+/* цвета */
+
+/* черный
+rgba(14, 14, 14, 1)
+синий
+rgba(16, 80, 132, 1)
+оранжевый
+rgba(255, 79, 0, 1)
+белый
+rgba(255, 255, 255, 1) */
+
+/* ------ */
+
+
+
+/* блок header */
+
+/* header */
+header{
+    position: relative;
+    min-height: 1024px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* видео */
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* вытаскивание содержимого */
+.content_menu{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/* меню */
+.menu{
+    width: 100%;
+}
+/* пункты меню */
+.block{
+    display: flex;
+    flex-direction: column; 
+}
+/* блоки меню */
+.block_one, .block_two{
+    display: flex;
+    justify-content: flex-end;
+}
+/* ссылки в меню */
+.block_one a, .block_two a{
+    margin: 0 1%;
+}
+/* иконки */
+.material-symbols-outlined{
+    font-size: 40px;
+    color: rgba(14, 14, 14, 1);
+    font-weight: 600;
+}
+/* блок лого */
+.logo{
+    margin: 0.5% 0 0 1%;
+}
+/* лого */
+.logo img{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+}
+/* блок текста внутри header */
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin: 300px 0 0 0 ;
+    justify-content: center;
+}
+/* текст  */
+.content p{
+    width: 60%;
+    font-family: 'Alef', sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+/* ------- */
+
+
+
+
+/* бургер меню */
+
+
+/* кнопка */
+.menu_button span{
+    display: none;
+    border: 5px solid rgba(14, 14, 14, 1);
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    font-size: 60px;
+    margin: 20px 20px 0 0 ;
+}
+/* мини меню */
+.menu_min{
+    display: none;
+}
+
+.menu_min{
+    display: block;
+}
+.block_min{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(14, 14, 14, 0.679);
+    padding: 10px;
+    width: 280px;
+    height: 100%;
+}
+.block_min .material-symbols-outlined{
+    color: rgba(255, 255, 255, 1);
+}
+.block_min a{
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    margin: 5%;
+}
+
+
+/* --------- */
+
+
+
+
+/* блок техники */
+
+/* текст */
+.technics a{
+    color: rgba(255, 255, 255, 1);
+}
+/* все списки */
+.technics ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+/* блок */
+.technics{
+    background-color: rgba(14, 14, 14, 1);
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* блоки контента */
+.technics div{
+    display: flex;
+}
+/* центральные блоки */
+.center div{
+    display: flex;
+    justify-content: space-between;
+}
+/* размер текста */
+.technics li{
+    width: 30%;
+    margin: 0 1% 0;
+}
+/* размер блока текста */
+.center ul{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+}
+/* картинка */
+.img_technics img{
+    width: 100%;
+}
+/* блок с картинкой */
+.img_technics{
+    width: 100%;
+}
+/* верх и низ */
+.top, .bottom{
+    width: 60%;
+    justify-content: space-around;
+}
+/* тект вверху и внизу */
+.top li, .bottom li{
+    display: flex;
+    justify-content: center;
+}
+/* мини версия */
+#min{
+    display: none;
+}
+
+
+
+/* -------- */
+
+
+
+
+/* блок экипировки */
+
+/* сам блок */
+.equipment{
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* блоки */
+.raider{
+    width: 20%;
+    height: 70%;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.raider img{
+    width: 100%;
+    height: 100%;
+}
+/* блоки текста */
+.equipment ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.raider_min{
+    display: none;
+}
+
+
+
+
+
+
+/* ------- */
+
+
+
+/* блок "о нас" */
+
+/* сам блок */
+.company{
+    background-color: rgba(14, 14, 14, 1);
+    width: 100%;
+    height: 1024px;
+}
+
+/* текст */
+p{
+    font-family: 'Alef', sans-serif;
+}
+.text{
+    padding: 5% 0 0 5%;
+}
+.text span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    line-height: 59.28px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.text span, .text p{
+    color: rgba(255, 255, 255, 1);
+}
+/* картинка */
+.company img{
+    margin: 0 2% 0 0 ;
+    height: 40%;
+    float: left;
+}
+
+/* ------ */
+
+
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 1034px;
+    background-image: url(/img/Rectangle\ 12.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-position: center;
+}
+.top_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+.moto, .spare{
+    height: 48%;
+}
+footer ul{
+    height: 420px;
+    margin: 10px 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* текст */
+footer a, footer p{
+    color: rgba(255, 255, 255, 1);
+}
+/* ссылки */
+footer li a{
+    font-family: 'Alef',  sans-serif;
+}
+/* шрифт */
+.info p{
+    font-family: 'Oswald', sans-serif;
+}
+/* контент */
+
+
+
+
+
+/* ------- */
+
+/* -------- */
+
+
+
+
+
+
+
+
+
+
+/* Окна */
+
+
+/* аккаунт */
+.popup{
+    display: none;
+}
+.modal{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    
+}
+.modal h3{
+    font-size: 32px;
+    font-family: 'Alef', sans-serif;
+}
+.new_field p{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.modal h4{
+    font-size: 40px;
+}
+.modal-body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content{
+    background-color:rgba(255, 255, 255, 1);
+    max-width: 90%;
+    padding: 1% 3% 3%;
+    position: relative;
+}
+form span{
+    color: red;
+}
+.modal-head{
+    width: 100%;
+    border-bottom: 2px solid rgba(14, 14, 14, 1);
+    display: flex;
+    justify-content: space-between;
+}
+.field_form{
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    border-right: 2px solid black;
+    width: 60%;
+}
+.form_body{
+    width: 95%;
+}
+.login input, .password input{
+    display: block;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(14, 14, 14, 1);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 78%;
+    height: 52px;
+}
+.bottom_modal{
+    width: 78%;
+}
+.form_person input{
+    width: 20px;
+}
+#close{
+    font-family: 'Alef';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+button{
+    max-width: 100%;
+    padding: 2% 5%;
+    background-color: rgba(255, 79, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+}
+.new_password{
+    font-size: 18px;
+    color: rgba(255, 79, 0, 1);
+}
+.form_person{
+    width: 475px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.check{
+    display: flex;
+    align-items: center;
+}
+.new_field h3, .new_field p{
+    display: flex;
+    justify-content: center;
+}
+.modal-content{
+    width: 80%;
+}
+.modal-content h4{
+    color:rgba(14, 14, 14, 1);
+}
+.come{
+    margin: 0 0 0 350px;
+}
+.create{
+    margin: 75px 0 0 120px ;
+}
+.new_field p{
+    width: 100%;
+}
+
+
+
+/* корзина */
+
+.bottom_basket input{
+    display: block;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(14, 14, 14, 1);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    height: 50%;
+}
+table{
+    border-bottom: 2px solid rgba(14, 14, 14, 1);
+    width: 100%;
+    margin: 5% 0 ;
+}
+.bottom_basket{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bottom_basket form{
+    width: 40%;
+    display: flex;
+    border: 0;
+}
+table{
+    font-family: 'Alef', sans-serif;
+}
+td{
+    width: 20%;
+}
+#name{
+    font-family: 'Oswald', sans-serif;
+}
+#button_basket_form{
+    height: 50%;
+    width: 50%;
+    padding: 0;
+    margin: 0 0 0 2%;
+}
+.total{
+    width: 50%;
+    display: flex;
+}
+
+#button_basket_total{
+    width: 40%;
+    height: 70%;
+    padding: 0;
+    margin: 0 0 0 5%;
+
+}
+
