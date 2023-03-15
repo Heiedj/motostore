@@ -96,7 +96,7 @@ rgba(255, 255, 255, 1) */
     padding: 2% 0 0;
 }
 .content_enduro{
-    background-image: url(/img/Rectangle\ 9.png);
+    background-image: url(/img/Rectangle_9.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -105,7 +105,7 @@ rgba(255, 255, 255, 1) */
     background-position: center;
 }
 .content_road{
-    background-image: url(/img/Rectangle\ 5.png);
+    background-image: url(/img/Rectangle_5.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -114,7 +114,7 @@ rgba(255, 255, 255, 1) */
     background-position: center;
 }
 .content_pitbike{
-    background-image: url(/img/Rectangle\ 13.png);
+    background-image: url(/img/Rectangle_13.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -123,7 +123,7 @@ rgba(255, 255, 255, 1) */
     background-position: center;
 }
 .content_atv{
-    background-image: url(/img/Rectangle\ 6.png);
+    background-image: url(/img/Rectangle_6.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
